@@ -31,15 +31,21 @@ const ContactSection = forwardRef<HTMLDivElement>((props, ref) => {
         </FadeUp>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <FadeUp delay={0.2}>
-            <div className="bg-white rounded-xl p-6 text-center shadow-md">
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="font-bold text-foreground mb-2">Telefon</h3>
-              <p className="text-foreground/70">+998 90 123 45 67</p>
-            </div>
-          </FadeUp>
+         <FadeUp delay={0.2}>
+  <div className="bg-white rounded-xl p-6 text-center shadow-md">
+    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+      <Phone className="w-6 h-6 text-primary" />
+    </div>
+    <h3 className="font-bold text-foreground mb-2">Telefon</h3>
+    <a
+      href="tel:+998901234567"
+      className="text-foreground/70 hover:text-primary transition"
+    >
+      +998 90 123 45 67
+    </a>
+  </div>
+</FadeUp>
+
 
           <FadeUp delay={0.3}>
             <div className="bg-white rounded-xl p-6 text-center shadow-md">

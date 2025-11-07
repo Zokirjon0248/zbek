@@ -127,7 +127,7 @@ const allProducts: Product[] = [
     rating: 4.8,
     reviews: 342,
     image: "/placeholder.svg?height=240&width=240",
-    category: "cream",
+    category: "mask",
     description: "Quyosh nuridan himoya qiluvchi krem",
     images: [
       "/placeholder.svg?height=400&width=400",
