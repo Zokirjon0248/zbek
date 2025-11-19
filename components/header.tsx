@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 
@@ -29,36 +29,41 @@ export default function Header({ onNavigate }: HeaderProps) {
   }
 
   return (
-    <header className="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
+    <header className="bg-[#090C0F] sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="font-bold text-2xl text-primary whitespace-nowrap">GoZal</div>
+        <div className="font-bold text-2xl text-primary whitespace-nowrap">ZBEK</div>
 
+        {/* Desktop nav */}
         <nav className="hidden md:flex gap-8 ml-auto">
           {menuItems.map((item) => (
             <button
               key={item.id}
               onClick={() => handleMenuClick(item.id)}
-              className="text-foreground hover:text-primary transition font-medium"
+              className="text-white hover:text-primary transition font-medium"
             >
               {item.label}
             </button>
           ))}
         </nav>
 
+        {/* Mobile sheet */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <Button variant="ghost" size="icon" className="md:hidden ml-auto" onClick={() => setIsOpen(true)}>
-            <Menu className="w-6 h-6" />
+            <Menu className="w-6 h-6 text-white" />
           </Button>
-          <SheetContent side="right" className="w-72">
-            <SheetHeader>
+
+          <SheetContent side="right" className="w-72 bg-[#090C0F] text-white">
+            <SheetHeader className="flex justify-between items-center">
               <SheetTitle className="text-primary text-xl">Menu</SheetTitle>
+           
             </SheetHeader>
+
             <nav className="flex flex-col gap-2 mt-8">
               {menuItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => handleMenuClick(item.id)}
-                  className="text-left text-foreground hover:text-primary hover:bg-secondary transition font-medium py-3 px-4 rounded-lg"
+                  className="text-left text-white hover:text-primary hover:bg-white/10 transition font-medium py-3 px-4 rounded-lg"
                 >
                   {item.label}
                 </button>

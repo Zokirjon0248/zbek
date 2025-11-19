@@ -9,12 +9,13 @@ interface CategoryNavProps {
 }
 
 const categories = [
-  { icon: Flower, label: "Krem", id: "cream" },
-  { icon: Droplet, label: "Serum", id: "serum" },
-  { icon: Wind, label: "Toza qilish", id: "cleansing" },
-  { icon: Sparkles, label: "Maska", id: "mask" },
-  { icon: Leaf, label: "Tabiiy", id: "natural" },
+  { icon: Leaf, label: "Kepka", id: "cap" },
+  { icon: Sparkles, label: "Hudi", id: "hoodie" },
+  { icon: Wind, label: "Futbolka", id: "tshirt" },
+  { icon: Flower, label: "Svitshot", id: "sweatshirt" },
+  { icon: Droplet, label: "Kolleksiya", id: "collection" },
 ]
+
 
 export default function CategoryNav({ onCategorySelect, activeCategory }: CategoryNavProps) {
   return (

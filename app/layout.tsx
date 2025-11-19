@@ -1,16 +1,16 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+// O'zbek tiliga mos font
+const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  title: "GoZal - Kosmetika Dukonida Xush Kelibsiz",
-  description: "Eng yaxshi kosmetika va go'zallik mahsulotlari",
-  generator: "MSS",
+  title: "ZBEK - Brendingiz Mahsulotlari",
+  description: "ZBEK brendi orqali sifatli kepka, hudi, futbolka va boshqa mahsulotlar",
+  generator: "ZBEK Official",
 }
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uz" dir="ltr">
-      <body className={`font-sans antialiased`}>
+      <body className={`${inter.className} antialiased bg-[#090C0F] text-white`}>
         {children}
         <Analytics />
       </body>

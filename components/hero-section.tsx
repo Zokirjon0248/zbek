@@ -47,18 +47,18 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
   }, [])
 
   return (
-    <section className="bg-gradient-to-r from-primary/90 via-primary to-accent/80 py-16 md:py-32 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+   <section className="bg-[#090C0F] min-h-screen flex items-center py-16 md:py-32 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-16 w-full">
         <div className="flex-1">
-          <h1 ref={titleRef} className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+          <h1 ref={titleRef} className="text-4xl md:text-5xl lg:text-7xl  font-bold mb-6 text-white text-t">
             Go'zallikni Yangilang
           </h1>
-          <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
+          <p className="text-lg md:text-xl mb-8 text-white leading-relaxed">
             Eng yaxshi kosmetika va go'zallik mahsulotlari siz uchun maxsus tanlab olindi.
           </p>
           <Button
             size="lg"
-            className="bg-white text-primary hover:bg-white/90 font-semibold px-8"
+            className="bg-white text-primary hover:bg-white/90 font-semibold px-8 cursor-pointer"
             onClick={() => onNavigate("products")}
           >
             Sotib Olishni Boshlang
@@ -69,7 +69,7 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
           <div className="relative w-72 h-72 md:w-80 md:h-80">
             <div className="absolute inset-0 bg-white/20 rounded-full blur-3xl"></div>
             <img
-              src="/beauty-cosmetics-jar-product-purple.jpg"
+              src="/zbek.jpg"
               alt="Beauty Product"
               className="w-full h-full object-cover rounded-3xl shadow-2xl"
             />

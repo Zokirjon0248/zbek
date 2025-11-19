@@ -22,69 +22,70 @@ interface PopularProductsProps {
 const popularProducts: PopularProduct[] = [
   {
     id: 1,
-    name: "Yuz uchun kremi",
-    price: "245,000",
-    originalPrice: "320,000",
-    rating: 4.8,
-    reviews: 324,
-    image: "/face-cream-moisturizer.jpg",
-    description: "Eng yaxshi yuz kremi, terini nemli va sog'lom qiladi",
-    category: "cream",
+    name: "ZBEK Logo Kepka",
+    price: "95,000",
+    originalPrice: "120,000",
+    rating: 4.9,
+    reviews: 842,
+    image: "/rasim2.jpg",
+    description: "Brendingiz logosi tushirilgan premium sifatli kepkalar.",
+    category: "Kepka",
     images: [
-      "/face-cream-moisturizer.jpg",
-      "/face-cream-moisturizer-front.jpg",
-      "/face-cream-moisturizer-side.jpg",
+      "/rasim1.jpg",
+      "/rasim2.jpg",
+      "/rasim3.jpg",
     ],
   },
   {
     id: 2,
-    name: "Serum turi",
-    price: "185,000",
-    originalPrice: "250,000",
-    rating: 4.9,
-    reviews: 412,
-    image: "/serum-essence-cosmetic.jpg",
-    description: "Tabiiy komponentlardan tayyorlangan serum",
-    category: "serum",
+    name: "Oversize Hudi (Logo bilan)",
+    price: "245,000",
+    originalPrice: "310,000",
+    rating: 5.0,
+    reviews: 1294,
+    image: "/rasim1.jpg",
+    description: "Qalin, sifatli material. Brendingiz uchun maxsus hudi.",
+    category: "Hudi",
     images: [
-      "/serum-essence-cosmetic.jpg",
-      "/serum-essence-front.jpg",
-      "/serum-essence-side.jpg"
+   "/rasim1.jpg",
+      "/rasim2.jpg",
+      "/rasim3.jpg",
     ],
   },
   {
     id: 3,
-    name: "Tabiiy yuz kremi",
-    price: "185,000",
-    originalPrice: "250,000",
-    rating: 4.9,
-    reviews: 412,
-    image: "/face-cream-moisturizer.jpg",
-    description: "Tabiiy komponentlardan tayyorlangan krem",
-    category: "cream",
+    name: "ZBEK Futbolka",
+    price: "135,000",
+    originalPrice: "180,000",
+    rating: 4.8,
+    reviews: 902,
+    image: "/rasim3.jpg",
+    description: "100% paxta. Print sifati uzoq yillarga chidamli.",
+    category: "Futbolka",
     images: [
-      "/face-cream-moisturizer.jpg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+       "/rasim1.jpg",
+      "/rasim2.jpg",
+      "/rasim3.jpg",
     ],
   },
   {
     id: 4,
-    name: "Premium serum",
-    price: "185,000",
-    originalPrice: "250,000",
+    name: "Svitshot (Embroidery Logo)",
+    price: "275,000",
+    originalPrice: "330,000",
     rating: 4.9,
-    reviews: 412,
-    image: "/serum-essence-cosmetic.jpg",
-    description: "Premium serum terini yoshartiradi",
-    category: "serum",
+    reviews: 611,
+    image: "/rasim2.jpg",
+    description: "Tikilgan (embroidery) logoli premium svitshot.",
+    category: "Svitshot",
     images: [
-      "/serum-essence-cosmetic.jpg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "/rasim1.jpg",
+      "/rasim2.jpg",
+      "/rasim3.jpg",
     ],
   },
 ]
+
 
 export default function PopularProducts({ onProductSelect }: PopularProductsProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -103,7 +104,7 @@ export default function PopularProducts({ onProductSelect }: PopularProductsProp
   const currentProduct = popularProducts[currentIndex]
 
   return (
-    <section className="py-12 bg-linear-to-b from-amber-100 to-background">
+    <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
